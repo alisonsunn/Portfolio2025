@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Extroverted.",
+    "emoji": "💬",
+    "content": "Always booted in interactive mode. Bubbly, curious, and never afraid to npm install a new challenge. Whether it’s people or problems, I run toward them (not away).",
+    "rotation": "4deg"
+  },
+  {
+    "title": "Intuitive.",
+    "emoji": "🧸",
+    "content": "I see the architecture before the blueprint. Love designing systems in my head before coding.Constantly learning, iterating, and mentally refactoring everything.",
+    "rotation": "-5deg"
+  },
+  {
+    "title": "Feeling.",
+    "emoji": "💜",
+    "content": "I believe good UX starts with empathy — even for 404s. I don’t just fix bugs, I think about how the user feels when they see one.",
+    "rotation": "6deg"
+  },
+  {
+    "title": "Judging.",
+    "emoji": "🔍",
+    "content": "My to-do list has a to-do list. I’ll git commit -m \"organize life\" without being asked. Love clean workflows, elegant pipelines, and knowing exactly what’s next.",
+    "rotation": "-3deg"
+  }
+]

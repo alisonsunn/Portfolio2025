@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "✉️",
+    "title": "Email",
+    "detail": "alison.jyue.sun@gmail.com"
+  },
+  {
+    "icon": "📍",
+    "title": "Location",
+    "detail": "Sydney, NSW"
+  },
+  {
+    "icon": "📞",
+    "title": "Phone",
+    "detail": "0490282258"
+  }
+]

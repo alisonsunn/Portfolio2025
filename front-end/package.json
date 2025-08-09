@@ -1,0 +1,44 @@
+{
+  "name": "front-end",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/judson": "^5.2.6",
+    "@fontsource/lato": "^5.2.6",
+    "@mui/icons-material": "^5.18.0",
+    "@mui/material": "5",
+    "@mui/system": "5",
+    "@tsparticles/engine": "^3.8.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
+    "framer-motion": "^12.23.12",
+    "react": "^19.1.0",
+    "react-cursor-follow": "^2.0.0",
+    "react-dom": "^19.1.0",
+    "react-draggable": "^4.5.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-router-dom": "^7.7.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^6.0.0"
+  }
+}
