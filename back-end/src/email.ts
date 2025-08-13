@@ -50,7 +50,7 @@ export async function sendEmailNotification({
 
   <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 12px; color: #888;">
     <p>This email was automatically sent from your personal website contact form</p>
-    <p>Received time: ${new Date().toLocaleString("zh-CN")}</p>
+    <p>Received time: ${new Date().toLocaleString("en-AU")}</p>
   </div>
 </div>
 `;
@@ -69,7 +69,7 @@ Email: ${email}
 Message:
 ${message}
 
-Received time: ${new Date().toLocaleString("zh-CN")}
+Received time: ${new Date().toLocaleString("en-AU")}
     `,
   };
 
