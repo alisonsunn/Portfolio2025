@@ -9,9 +9,9 @@ export default function Contact() {
         display: "flex",
         flexDirection: "row",
         gap: "50px",
-        margin: "30px auto",
         justifyContent: "center",
         alignItems: "center",
+        margin: "50px auto",
       }}
     >
       <GetInTouch />

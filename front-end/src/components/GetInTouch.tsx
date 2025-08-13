@@ -11,9 +11,11 @@ export default function GetInTouch() {
         flexDirection: "column",
         gap: "40px",
         width: "450px",
+        height: "100%",
         backgroundColor: theme.palette.background.paper,
         padding: "40px 15px",
         borderRadius: "24px",
+        
       }}
     >
       <Typography
