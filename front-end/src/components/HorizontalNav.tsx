@@ -13,6 +13,7 @@ export default function HorizontalNav({
   // Get the current pathname from the router
   const location = useLocation();
   const pathname = location.pathname;
+  const isProjectPage = pathname === "/project";
   let title: string;
   switch (pathname) {
     case "/":
@@ -25,21 +26,26 @@ export default function HorizontalNav({
       title = "Contact Me";
       break;
     default:
-      title = "Hello, I'm ALison.";
+      title = "";
       break;
   }
 
   return (
     <Box
       sx={{
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: isProjectPage
+          ? "transparent"
+          : theme.palette.background.paper,
         width: "100%",
-        height: "12%",
+        height: isProjectPage ? "0" : "12%", // 项目页面高度为0
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        position: "relative",
+        position: isProjectPage ? "fixed" : "relative",
+        top: isProjectPage ? 0 : "auto",
+        left: isProjectPage ? 0 : "auto",
+        zIndex: isProjectPage ? 1000 : "auto",
       }}
     >
       {/* Navbar Icon */}
@@ -55,6 +61,7 @@ export default function HorizontalNav({
           backgroundColor: theme.palette.primary.contrastText,
           borderRadius: "50%",
           left: "30px",
+          top: isProjectPage ? "30px" : "auto",
           cursor: "pointer",
           transition: "background-color 0.3s ease",
           "&:hover": {
@@ -71,15 +78,17 @@ export default function HorizontalNav({
         />
       </Box>
       {/* Navbar Content */}
-      <Typography
-        variant="h1"
-        sx={{
-          color: theme.palette.primary.contrastText,
-          fontFamily: theme.typography.fontFamily,
-        }}
-      >
-        {title}
-      </Typography>
+      {!isProjectPage && (
+        <Typography
+          variant="h1"
+          sx={{
+            color: theme.palette.primary.contrastText,
+            fontFamily: theme.typography.fontFamily,
+          }}
+        >
+          {title}
+        </Typography>
+      )}
     </Box>
   );
 }
